@@ -1,0 +1,149 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  height: 100vh;
+  font-family: Raleway, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #fff;
+}
+
+body {
+  padding-top: 20px;
+}
+
+
+/****************   CSS COMMENT   ****************/
+#main-header {
+  margin: 0;
+  font-size: 3rem;
+  text-align: center;
+}
+
+form {
+  display: none;
+}
+
+form.active,
+.result-container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  -ms-align-items: center;
+  align-items: center;
+  width: 100%;
+  height: calc(100% - 228px);
+}
+
+fieldset {
+  display: block;
+  position: relative;
+  max-width: 800px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+.question-text {
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+input {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 25px;
+  height: 42px;
+  vertical-align: bottom;
+}
+
+fieldset input:last-of-type {
+  margin-bottom: 0;
+}
+
+.answer {
+  display: inline-block;
+  margin: 0;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 12px 15px;
+  border: 0;
+  font-family: Raleway, Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #3f8ac7;
+  transition: background .1s ease-in-out;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3174ab;
+}
+
+input[type=radio]:not(old) {
+  width: 42px;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/*input[type=radio]:not(old):hover + label {
+  background: url(../img/radio-sm.png) no-repeat 0 0
+}*/
+
+input[type=radio]:not(old) + label {
+  display: inline-block;
+  margin-left: -42px;
+  padding-left: 42px;
+  background: url(../img/radio-sm.png) no-repeat 0 0;
+  line-height: 36px;
+}
+
+input[type=radio]:not(old):checked + label,
+input[type=radio]:not(old):hover + label {
+  background-position: 0 -36px;
+}
+
+#error-head {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  color: #f00;
+}
+
+.result-container {
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  -o-flex-direction: column;
+  flex-direction: column;
+}
+
+.result-header,
+.result-text {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.result-header {
+  margin-bottom: 0;
+}
+
+.result-text {
+  font-size: 1.75rem;
+}

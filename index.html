@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Joshua Larks">
+    <meta name="description" content="Quiz application created in vanilla JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz App</title>
+    <!-- <link rel="shortcut icon" href="img/favicon.ico"> -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!--****************   COMMENT   ****************-->
+    <h1 id="main-header">Classic Video Game Quiz</h1>
+    <h3 id="error-head"></h3>
+    <form action="#" id="question1" class="active">
+      <fieldset>
+        <h2 class="question-text">1: Who is Nintendo's main mascot?</h2>
+        <input type="radio" value="optionA" name="q-1"><label for="optionA">Mario</label><br>
+        <input type="radio" value="optionB" name="q-1"><label for="optionB">Kirby</label><br>
+        <input type="radio" value="optionC" name="q-1"><label for="optionC">Link</label><br>
+        <input type="radio" value="optionD" name="q-1"><label for="optionD">Samus</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question2">
+      <fieldset>
+        <h2 class="question-text">2: Who is Mega Man's arch nemesis?</h2>
+        <input type="radio" value="optionA" name="q-2"><label for="optionA">Zero</label><br>
+        <input type="radio" value="optionB" name="q-2"><label for="optionB">Bass</label><br>
+        <input type="radio" value="optionC" name="q-2"><label for="optionC">Dr. Wily</label><br>
+        <input type="radio" value="optionD" name="q-2"><label for="optionD">Proto Man</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question3">
+      <fieldset>
+        <h2 class="question-text">3: Where was Ryu from Street Fighter born?</h2>
+        <input type="radio" value="optionA" name="q-3"><label for="optionA">Thailand</label><br>
+        <input type="radio" value="optionB" name="q-3"><label for="optionB">U.S.A.</label><br>
+        <input type="radio" value="optionC" name="q-3"><label for="optionC">Korea</label><br>
+        <input type="radio" value="optionD" name="q-3"><label for="optionD">Japan</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question4">
+      <fieldset>
+        <h2 class="question-text">4: Who is the main character in the Gears of War trilogy?</h2>
+        <input type="radio" value="optionA" name="q-4"><label for="optionA">Augustus Cole</label><br>
+        <input type="radio" value="optionB" name="q-4"><label for="optionB">Dominique Santiago</label><br>
+        <input type="radio" value="optionC" name="q-4"><label for="optionC">Marcus Phoenix</label><br>
+        <input type="radio" value="optionD" name="q-4"><label for="optionD">Baird</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question5">
+      <fieldset>
+        <h2 class="question-text">5: Which material is best for crafting a sword in Minecraft?</h2>
+        <input type="radio" value="optionA" name="q-5"><label for="optionA">Wood</label><br>
+        <input type="radio" value="optionB" name="q-5"><label for="optionB">Diamond</label><br>
+        <input type="radio" value="optionC" name="q-5"><label for="optionC">Gold</label><br>
+        <input type="radio" value="optionD" name="q-5"><label for="optionD">Iron</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question6">
+      <fieldset>
+        <h2 class="question-text">6: Who was the main voice actor for Sam Fischer in all but one Splinter Cell game?</h2>
+        <input type="radio" value="optionA" name="q-6"><label for="optionA">Ian McKellen</label><br>
+        <input type="radio" value="optionB" name="q-6"><label for="optionB">Dennis Haysbert</label><br>
+        <input type="radio" value="optionC" name="q-6"><label for="optionC">Sean Connery</label><br>
+        <input type="radio" value="optionD" name="q-6"><label for="optionD">Michael Ironside</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question7">
+      <fieldset>
+        <h2 class="question-text">7: Where do you find Meryl's codec number in the original Metal Gear Solid?</h2>
+        <input type="radio" value="optionA" name="q-7"><label for="optionA">Under the water during the intro.</label><br>
+        <input type="radio" value="optionB" name="q-7"><label for="optionB">In the truck next to the helipad.</label><br>
+        <input type="radio" value="optionC" name="q-7"><label for="optionC">On the back of the box.</label><br>
+        <input type="radio" value="optionD" name="q-7"><label for="optionD">Kenneth Baker gives to you before he dies.</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question8">
+      <fieldset>
+        <h2 class="question-text">8: Which character is in every Final Fantasy?</h2>
+        <input type="radio" value="optionA" name="q-8"><label for="optionA">Cid</label><br>
+        <input type="radio" value="optionB" name="q-8"><label for="optionB">Titus</label><br>
+        <input type="radio" value="optionC" name="q-8"><label for="optionC">Cloud</label><br>
+        <input type="radio" value="optionD" name="q-8"><label for="optionD">Squall</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question9">
+      <fieldset>
+        <h2 class="question-text">9: Who was Sonic's enemy turned friend?</h2>
+        <input type="radio" value="optionA" name="q-9"><label for="optionA">Tails</label><br>
+        <input type="radio" value="optionB" name="q-9"><label for="optionB">Knuckles</label><br>
+        <input type="radio" value="optionC" name="q-9"><label for="optionC">Shadow</label><br>
+        <input type="radio" value="optionD" name="q-9"><label for="optionD">Amy</label>
+        <button type="button">SUBMIT</button>
+      </fieldset>
+    </form>
+
+    <form action="#" id="question10">
+      <fieldset>
+        <h2 class="question-text">10: How many Pokemon were in Blue, Red, and Yellow versions?</h2>
+        <input type="radio" value="optionA" name="q-10"><label for="optionA">200</label><br>
+        <input type="radio" value="optionB" name="q-10"><label for="optionB">175</label><br>
+        <input type="radio" value="optionC" name="q-10"><label for="optionC">150</label><br>
+        <input type="radio" value="optionD" name="q-10"><label for="optionD">250</label>
+        <button type="button">SUBMIT</button>
+      <fieldset>
+    </form>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
