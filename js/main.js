@@ -37,7 +37,7 @@ var questionLists = [
   {
     qNum: 'question8',
     bg: 'url(img/finalf.jpg) no-repeat',
-    answer: 'optionB'
+    answer: 'optionA'
   },
   {
     qNum: 'question9',
